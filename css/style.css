@@ -44,13 +44,24 @@
 /* fondo */
 .background{
   width: 100%;
-  height: 900px;
+  min-height: 697px;
   background-image: url('../img/back3.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+h4{
+  padding-left: 40px;
+  color: white;
+}
+
 .characters{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#containCharacter{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -76,4 +87,37 @@
   font-weight: 900;
   color: black;
   -webkit-text-stroke: .5px yellow;
+}
+
+.cardAnimation{
+  height: 240px;
+  overflow-y: hidden;
+  animation-name: tamaño;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tamaño{
+  
+  100%{
+    height: 610px;
+  }
+}
+
+.cardsAnimation{
+  height: 240px;
+  overflow-y: hidden;
+}
+
+.cardsAnimation:hover{
+  animation-name: tamaños;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tamaños{
+  
+  100%{
+    height: 400px;
+  }
 }

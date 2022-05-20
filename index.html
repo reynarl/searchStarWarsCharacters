@@ -23,18 +23,21 @@
   <section class="background">
     <div class="search">
     <input type="text" id="searchInput" placeholder="Buscar personaje...">
-    <button id="searchBtn" type="button">Buscar</button>
+    <button id="searchBtn" type="button" class="btn btn-outline-dark">Buscar</button>
     </div>
 
-    <div class="characters" id="containCharacter">
-      <div class="card" id="characterCard" style="display: none;">
+    <div class="characters" id="containAll" style="display: none;">
+      <!-- <h4>Inicio</h4> -->
+      <div id="containCharacter"></div>
+    </div>
+    <div class="characters">
+      <div class="card cardAnimation" id="characterCard" style="display: none;">
         <img class="sw-logo" src="img/sw_logo.svg" alt="logo">
         <div class="card-body">
           <h5 class="card-title nameTitle" id="name"></h5>
           <div id="description"></div>
         </div>
       </div>
-      <!-- <div class="card" id="allCards" style="width: 18rem;"></div> -->
     </div>
   </section>
   
